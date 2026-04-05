@@ -2,6 +2,8 @@
 
 https://user-images.githubusercontent.com/73356704/230825593-03f74662-50dc-4c29-bd01-ed94c59fa358.mp4
 
+- Primer prototipo de portfolio mostrando un esbozo de la idea original.
+
 
 
 
