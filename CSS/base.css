@@ -1,0 +1,66 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    /* COLORS */
+    --color-primary: #00aaff;
+    --color-secondary: #ffffffaa;
+    --color-light: #ffffff;
+    --color-bg: #000;
+
+    /* WATER SYSTEN  */
+    --water-highlight: rgba(255, 255, 255, 0.95);
+    --water-highlight-soft: rgba(255, 255, 255, 0.4);
+    --water-mid: rgba(0, 120, 255, 0.15);
+    --water-deep: rgba(0, 80, 200, 0.2);
+    --water-deep-mid: rgba(0, 150, 255, 0.1);
+    --water-deep-soft: rgba(0, 0, 0, 0.15);
+    --water-shadow: rgba(0, 0, 0, 0.2);
+
+    /* SHADOWS */
+    --shadow-highlight: rgba(255, 255, 255, 0.8);
+    --shadow-mid: rgba(0, 0, 0, 0.25);
+    --shadow-soft: rgba(0, 0, 0, 0.3);
+    --shadow-light: rgba(100, 20, 0, 0.6);
+    --shadow-blue: rgba(50, 70, 150, 0.7);
+
+    /* SHAPE */
+    --radius-round: 50%;
+
+    /* FONT DIMENSIONS */
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+
+    /* FONT FAMILIES */
+    --font-family-primary: 'Poppins', sans-serif;
+
+    /* FONT WEIGHTS */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+
+    /* FILTERS */
+    --filter-soft-blur: blur(4px);
+    --filter-blur: blur(12px);
+
+
+}
+
+/* BODY */
+body, html {
+    min-height: 100dvh;
+}
+
+body {
+    background: 
+    radial-gradient(circle at 20% 20%, var(--water-highlight-soft), transparent),
+    radial-gradient(circle at 80% 80%, var(--water-deep-mid), transparent),
+    /* var(--color-bg); */
+    font-family 'Poppins', sans-serif;
+}

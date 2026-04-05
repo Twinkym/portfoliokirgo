@@ -1,7 +1,5 @@
 /* Importaciones */
-@import "./menu_styles.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url(./animations.css);
 
 /* Variables globales */
 :root {
@@ -27,17 +25,7 @@ body, html{
     background: #fff;
 }
 
-/* Encabezado Principal */
 
-.main-header {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;text-align: center;
-    width: 100%;
-    max-height: 33vh;
-    border: 1px solid #000;
-}
 
 .Logo {
     padding: .3rem;
@@ -66,17 +54,6 @@ body, html{
 
 /*  Contenedor de la Sección construcción */
 
-.under-construction-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100vw;
-    margin-top: 5vh;
-    background-image: url("IMG/WEB_EN_CONSTRUCCION.jpg");
-}
-
 #under-construction-title{
     font-size: 6vw;
     margin: 10px;
@@ -103,52 +80,6 @@ body, html{
 #apologies {
     margin: 0 30%;
     margin-bottom: 20px;
-}
-
-/* About Section */
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100vw;
-    margin-top: 5vh;
-    /* adjust the top margin as needed*/
-}
-
-#about-title {
-    font-family: 'Courier New', Courier, monospace;
-    color: darkgreen;
-    font-size: 2em;
-    line-height: 1.6em;
-    letter-spacing: .1em;
-    margin-bottom: 2vh;
-    /* Adjust the space between title and image  as needed */
-}
-
-.img-author {
-    margin-right: 2vh;
-    /* Adjust the space between the image and paragraph as needed */
-
-}
-
-.img-author img {
-    width: 15vw;
-    /* Adjust the image size as needed*/
-    max-width: 100%;
-    /* Ensures that the image does not overflow from the container*/
-    border-radius: 50%;
-}
-
-#were {
-    width: 30%;
-    /* Adjust the image size as needed to fit within its parent element */
-    max-width: 70vw;
-    /* Adjust the maximum paragraph width */
-    margin-bottom: 20px;
-    /* Adjust the lower margin of the paragraph */
 }
 
 .skills-container {
@@ -207,40 +138,13 @@ footer {
     margin: 20px;
 }
 
-.redes-section,
-.copyright-section,
-.contact-section {
-    border-right: 1px solid #ccc;
-    padding-right: 20px;
-    margin-right: 20px;
-    display: inline-block;
-    flex-basis: 33.33%;
 
-}
 
-.copyright-section {
-    margin-left: 10px;
-}
 
-#backToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-}
 
-#backToTopBtn:hover {
-    background-color: #333;
-}
+
+
+
 
 #canvas {
     position: relative;
@@ -259,11 +163,6 @@ footer {
     font-size: 60%;
 }
 
-#Main-Container {
-    text-align: center;
-    align-items: end;
-    margin-top: 2em;
-}
 
 .portfolio {
     position: absolute;
@@ -271,26 +170,6 @@ footer {
     text-decoration: none;
     font-style: oblique;
     font-size: small;
-}
-
-#backToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-}
-
-#backToTopBtn:hover {
-    background-color: #333;
 }
 
 footer {
@@ -316,9 +195,7 @@ footer {
 
 }
 
-#twitter, #linkedin{
-    color: #55acee
-}
+
 
 
 .copyright-section {

@@ -1,0 +1,212 @@
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-content: space-between;
+    text-align: center;
+
+    width: 100%;
+    max-height: 33vh;
+
+    margin: 1dvh 0;
+    padding: 2rem 2rem;
+}
+
+.header-left {
+    display: flex;
+    top: 0;
+    gap: 1rem;
+}
+
+.title {
+    font-size: clamp(1.2rem, 2dvw, 1.8rem);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    justify-self: center;
+}
+
+.logo {
+    width: clamp(10rem, 8dvw, 8.5rem);
+    height: clamp(8rem, 8dvw, 7.5rem);
+
+    object-fit: cover;
+
+    border-radius: 50% 50% 60% 60% / 60% 60% 50% 40%;
+    box-shadow: 0 0 2.5rem 0 var(--shadow-blue);
+
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.under-construction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    margin-top: 15vh;
+}
+
+#under-construction-img {
+    max-width: 33vw;
+    border-radius: var(--radius-round);
+    margin: 2dvh 0;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 8rem 2rem;
+    min-height: 100dvh;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 65rem;
+}
+
+.about-container h2 {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(1.8rem, 2.5dvw, 2.4rem);
+    margin-bottom: 2.5rem;
+}
+
+.about-container p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-img {
+    max-width: 33vw;
+    border-radius: var(--radius-round);
+    margin: 2dvh 0;
+    margin-bottom: 2.5rem;
+}
+
+.img-author {
+    display: flex;
+    justify-content: center;
+    box-shadow: 
+    unset 0 10px 15px var(--shadow-soft);
+}
+
+.portfolio {
+    display: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: column; */
+    justify-content: space-around;
+    align-items: stretch;
+    border-radius: 10px;
+    box-shadow: inset -10px -10px 10px rgba(0, 0, 0, .7), inset 10px 10px 10px rgba(255, 255, 255, .7);
+    text-align: center;
+    width: auto;
+    height: auto !important;
+    font-family: "Raleway", sans-serif;
+}
+
+.skills-title h2 {
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: inset -10px -10px 10px rgba(0, 0, 0, .7),
+        inset 10px 10px 10px rgba(255, 255, 255, .7);
+    padding: 2vh;
+    width: calc(100% - 40px);
+    margin: 20px;
+    text-align: center;
+
+}
+
+.frontend>#backend,
+h4,
+ul {
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: inset -10px -10px 10px rgba(0, 0, 0, .7), inset 10px 10px 10px rgba(255, 255, 255, .7);
+    line-height: 1em;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #000;
+    padding: 2vh 4vw;
+    margin-bottom: 4%;
+    /* max-width: 30vw; */
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    border: teal solid .2em;
+    margin: 20px;
+}
+
+.redes-section,
+.copyright-section,
+.contact-section {
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    flex-basis: 33.33%;
+
+}
+
+#twitter, #linkedin{
+    color: #55acee
+}
+
+.copyright-section {
+    margin-left: 10px;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#backToTopBtn:hover {
+    background-color: #333;
+}
+
+#Main-Container {
+    text-align: center;
+    align-items: end;
+    margin-top: 2em;
+}
