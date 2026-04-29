@@ -16,7 +16,7 @@ function step() {
   canvas.getContext("2d").fillRect(0, 0, canvas.width, canvas.height);
 
   //verde
-  canvas.getContext("2d").fillStyle = "#0F0";
+  canvas.getContext("2d").fillStyle = "rgb(123, 255, 0)";
   //para cada clolumna
   columns.map(function (value, index) {
     //fromCharCode convierte puntos de código unicode ( http://en.wikipedia.org/wiki/Code_point ) a un string
