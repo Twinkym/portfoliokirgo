@@ -11,23 +11,23 @@ export const NAV_TREE = {
           name: "PHP",
           type: "branch",
           children: [
-            { name: "Micro", type: "leaf", url: "/php/micro" },
-            { name: "CRM", type: "leaf", url: "/php/crm" }
+            { name: "Micro", type: "leaf", url: "/pages/project.html?project=php-micro" },
+            { name: "CRM", type: "leaf", url: "/pages/project.html?project=php-crm" }
           ]
         },
         {
           name: "Java",
           type: "branch",
           children: [
-            { name: "ERP My Restaurant", type: "leaf", url: "/java/erpMyRestaurant"},
-            { name: "Software Bancario", type: "leaf", url: "/java/softwareBancario"}
+            { name: "ERP My Restaurant", type: "leaf", url: "/pages/project.html?project=java-erpmyrestaurant"},
+            { name: "Software Bancario", type: "leaf", url: "/pages/project.html?project=java-softwarebancario"}
           ]
         },
         {
             name: "C#",
             type: "branch",
             children: [
-              { name: "Cirsa", type: "leaf", url: "/csharp/Cirsa"}
+              { name: "Cirsa", type: "leaf", url: "/pages/project.html?project=csharp-cirsa"}
             ]
         },
         {
@@ -41,15 +41,15 @@ export const NAV_TREE = {
       name: "Juegos",
       type: "branch",
       children: [
-        { name: "Galactico", type: "leaf", url: "/juegos/talactico"},
-        { name: "Tetrico", type: "leaf", url: "/juegos/tetrico"}
+        { name: "Galactico", type: "leaf", url: "/pages/project.html?project=juegos-galactico"},
+        { name: "Tetrico", type: "leaf", url: "/pages/project.html?project=juegos-tetrico"}
       ]
     },
     {
       name: "Librerias",
       type: "branch",
       children: [
-        { name: "validators", type: "leaf", url: "/librerias/validators"},
+        { name: "validators", type: "leaf", url: "/pages/project.html?project=librerias-validators"},
       ]
     },
     { name: "Contact", type: "leaf", url: "/pages/contact.html" },

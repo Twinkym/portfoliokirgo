@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribe | KDTech</title>
+    <link rel="shortcut icon" href="/IMG/Logo_KirgoDev_320.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/layout.css">
+    <link rel="stylesheet" href="../CSS/components/liquid-menu.css">
+    <link rel="stylesheet" href="../CSS/components/forms.css">
+    <link rel="stylesheet" href="../CSS/components/buttons.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+<body>
+
+    <button id="back-btn" class="back-btn">
+        <span class="arrow">←</span>
+    </button>
+
+    <section class="contact">
+        <div class="contact_container">
+
+            <h1>Join KDTech-Engineering</h1>
+            <p class="subtitle">Stay updated about our latest projects, labs and engineering insights.</p>
+
+            <form id="subscribe-form" novalidate>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <span class="error" data-error="email"></span>
+                </div>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="/JS/core/validation.js"></script>
+    <script type="module" src="/JS/core/subscribe.js"></script>
+    
+</body>
+</html>
