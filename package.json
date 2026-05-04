@@ -1,0 +1,16 @@
+{
+  "name": "portfoliokirgo",
+  "version": "1.0.0",
+  "description": "https://user-images.githubusercontent.com/73356704/230825593-03f74662-50dc-4c29-bd01-ed94c59fa358.mp4",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss CSS/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.99.0"
+  }
+}

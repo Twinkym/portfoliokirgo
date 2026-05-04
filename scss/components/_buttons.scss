@@ -1,0 +1,50 @@
+/* components/_buttons.scss */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: var(--font-weight-bold);
+
+  border-radius: var(--radius);
+  border: none;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/* VARIANTES (fuera del bloque .btn) */
+
+.btn--primary {
+  background: var(--color-accent);
+  color: #fff;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn--secondary {
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+
+  &:hover {
+    background: var(--color-accent);
+    color: #fff;
+  }
+}
