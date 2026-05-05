@@ -1,12 +1,8 @@
 
 
-https://user-images.githubusercontent.com/73356704/230825593-03f74662-50dc-4c29-bd01-ed94c59fa358.mp4
 
+[![KDTech Engineering - Portfolio]()](https://drive.google.com/file/d/1RxvDHMCI3b0Z19cJnPL4hguCjliIowTn/view?usp=drive_link)
 
-
-
-
-https://github.com/Twinkym/portfoliokirgo/assets/73356704/0dccf971-261d-4120-a8da-a26e1c98ff53
 
 
 # codespaces-blank
