@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 
   padding: var(--spacing-lg);
   margin-top: 2rem;
@@ -32,6 +34,10 @@
   }
 }
 
+.hero__content {
+  text-align: center;
+}
+
 .projects {
   padding: var(--spacing-lg);
 
@@ -40,4 +46,28 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-lg);
   }
+}
+
+.about-preview {
+  display: flex;
+  flex-direction: column; /* 🔥 clave */
+  align-items: center;
+  text-align: center;
+
+  max-width: 700px;
+  margin: 0 auto;
+  gap: var(--spacing-md);
+  scroll-margin-top: 100px;
+}
+
+.tech-block ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.tech-block img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }

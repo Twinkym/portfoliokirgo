@@ -4,13 +4,28 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  backdrop-filter: blur(10px);
+  
 
-  padding: var(--spacing-md) var(--spacing-lg);
+  padding: 1rem 2rem; /* antes era demasiado grande */
   width: 100%;
 
   position: relative;
   z-index: 10;
+
+  /* 🌊 Efecto agua */
+  background:
+    radial-gradient(circle at 20% 30%, var(--water-highlight-soft), transparent 40%),
+    radial-gradient(circle at 80% 70%, var(--water-mid), transparent 50%),
+    linear-gradient(
+      135deg,
+      rgba(0, 80, 200, 0.2),
+      rgba(0, 150, 255, 0.15),
+      rgba(0,0,0,0.6)
+    );
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
 }
 
 /* zona izquierda */
@@ -22,6 +37,7 @@
 /* logo */
 .logo {
   width: clamp(4rem, 6vw, 6rem);
+  transform: translateY(-20px);
   height: auto;
 
   border-radius: var(--radius-round);
@@ -40,6 +56,7 @@
   font-size: clamp(1.2rem, 2vw, 1.6rem);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.05em;
+  transform: translateY(-10px);
 }
 
 /* menú */

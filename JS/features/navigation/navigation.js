@@ -2,7 +2,7 @@ export const NAV_TREE = {
   name: "Menu",
   type: "branch",
   children: [
-    { name: "About", type: "leaf", url: "#about" },
+    { name: "About", type: "leaf", url: "#about-preview" },
     {
       name: "Portfolio",
       type: "branch",

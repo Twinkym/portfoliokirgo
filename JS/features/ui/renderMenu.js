@@ -1,13 +1,15 @@
-import { NAV_TREE } from "../config/navigation.js";
-import { state } from "../core/state.js";
-import { isLeaf, navigate, pushState, goBack } from "../core/navigationLogic.js";
+import { NAV_TREE } from "../navigation/navigation.js";
+import { state } from "../navigation/state.js";
+import { isLeaf, navigate, pushState, goBack } from "../navigation/navigationLogic.js";
 import { explode, spawn, float, animateLiquid } from "../animations/dropAnimations.js";
-import { MENU_CONFIG } from "../config/menuConfig.js";
-import { getPosition } from "./utils/positioning.js";
+import { MENU_CONFIG } from "../../shared/config/menuConfig.js";
+import { getPosition } from "../../shared/utils/positioning.js";
 import { startPhysics } from "../animations/physics.js";
 
 
-const container = document.getElementById("liquid-menu");
+function getContainer() {
+    return document.getElementById("liquid-menu");
+}
 
 export function initMenu() {
     state.currentNode = NAV_TREE;
@@ -27,21 +29,24 @@ function addCenterDrop(node, drops) {
 }
 
 function render(node) {
+    const container = getContainer();
+    if (!container) return; // 🛡 protección
+
     container.innerHTML = "";
 
-     const drops = []; 
-    
-     addBackDrop(drops);
-     addCenterDrop(node, drops);
+    const drops = [];
 
-     const isRoot = node === NAV_TREE;
+    addBackDrop(drops);
+    addCenterDrop(node, drops);
 
-     if ((state.isOpen && node.children) || (!isRoot && node.children)) {
-         addChildren(node, drops);
-     }
+    const isRoot = node === NAV_TREE;
 
-     spawn(drops);
-     startPhysics(drops);
+    if ((state.isOpen && node.children) || (!isRoot && node.children)) {
+        addChildren(node, drops);
+    }
+
+    spawn(drops);
+    startPhysics(drops);
 }
 
 function createBackDrop() {
@@ -138,12 +143,20 @@ function handleBack() {
 }
 
 function append(el, drops) {
+    const container = getContainer();
+    if (!container) return;
+
     container.appendChild(el);
     drops.push(el);
 }
 
 function getDrops() {
+    const container = getContainer();
+    if (!container) return;
+
     return container.querySelectorAll(".drop");
 }
 
-
+export function renderMenu(node) {
+    render(node);
+}

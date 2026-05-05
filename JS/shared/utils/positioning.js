@@ -1,4 +1,4 @@
-import { MENU_CONFIG } from "../../config/menuConfig.js";
+import { MENU_CONFIG } from "../config/menuConfig.js";
 
 const MINI_DISTANCE = 80;
 

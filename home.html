@@ -5,13 +5,16 @@
     <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="David De La Puente - kirgo -">
-    <meta name="description" content="Portfolio from kirgo make it with html, css & JS">
-    <!-- Meta SEO -->
-    <meta name="keywords"
-        content="html, css, JS, Portfolio, carrusel, Java, Jquery, Mysql, Sql, Python, Django, VueJs, React, Angular, ">
-    <!-- Page title -->
     <title>KDTech Engineering | Portfolio</title>
+    <meta name="author" content="David De La Puente">
+    <meta name="description" content="KDTech Engineering portfolio. Software development focused on scalable systems, cybersecurity and modern web architecture.">
+    
+    <meta property="og:title" content="KDTech Engineering | Portfolio">
+    <meta property="og:description" content="Scalable software, cybersecurity and modern web architecture.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="IMG/lOGO_KIRGOdEV_320.png">
+    
+    <link rel="canonical" href="https://kdtech-dev.netlify.app">
     <link rel="icon" href="IMG/Logo_KirgoDev_320.png" type="image/png">
     <!-- Start Styles Section -->
     <!-- <link rel="stylesheet" href="CSS/matrix.css"> -->
@@ -21,163 +24,22 @@
 
 <body>
 
-    <header class="header">
-        <div class="header-left">
-            <img src="IMG/Logo_KirgoDev_320.png" class="logo" alt="KDTech logo">
+    <div id="header"></div>
 
-        </div>
-        <span class="title">Portfolio KDTech</span>
 
-        <nav id="liquid-menu"></nav>
-    </header>
-
-    <main id="main-Container">
-
-        <section class="hero">
-            <div class="hero__content">
-                <h1 class="hero__title">Building Scalable Software & Secure Systems</h1>
-            </div>
-
-            <p class="hero__subtitle">
-                Software developer focused on enterprise applications, cybersecurity and cloud architectures.
-            </p>
-
-            <div class="hero__actions">
-                <a href="./pages/portfolio.html" class="btn btn--primary">View Projects</a>
-                <a href="./pages/contact.html" class="btn btn--secondary">Contact</a>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <h2 class="section-title">Featured Projects</h2>
-
-            <div class="projects__grid">
-
-                <article class="project-card">
-                <h3>School Management System</h3>
-                <p>
-                    Platform for managing academic operations including students, teachers and sheduling.      
-                </p>
-                <ul class="project-card__meta">
-                    <li>Spring Boot</li>
-                    <li>Java</li>
-                    <li>MySQL</li>
-                    <li>REST API</li>
-                </ul>
-                <a href="#" class="btn btn--secondary">View Details</a>
-            </article>
-
-            <article class="project-card">
-                <h3>Restaurant ERP</h3>
-                <p>
-                    Business management system for orders, inventory and billing.
-                </p>
-                <ul class="project-card__meta">
-                    <li>Java</li>
-                    <li>SQL</li>
-                </ul>
-                <a href="#" class="btn btn--secondary">View Details</a>
-            </article>
-
-            <article class="project-card">
-                <h3>ATM Simulator</h3>
-                <p>
-                    Simulation of banking operations with transaction control.
-                </p>
-                <ul class="project-card__meta">
-                    <li>Java</li>
-                    <li>OOP</li>
-                </ul>
-                <a href="#" class="btn btn--secondary">View Details</a>
-            </article>
-
-            </div>
-            
-        </section>
-
-        <section class="about-preview">
-                <h2>About KDTech</h2>
-                <p>
-                    I design and build software with a focus on scalability,
-                    security and long-term maintainability.
-                </p>
-
-                <a href="./pages/about.html" class="btn btn--secondary">Read more</a>
-        </section>
-
-        <section class="tech-experience">
-            <h2 class="section-title">Tech Experience</h2>
-        
-            <div class="tech-block">
-                <h3>Front-End</h3>
-                <ul>
-                    <li><img src="./IMG/ICONOS/icons8-html5.svg" alt="HTML5"></li>
-                    <li><img src="./IMG/ICONOS/icons8-css3.svg" alt="CSS3"></li>
-                    <li><img src="./IMG/ICONOS/icons8-js.svg" alt="JavaScript"></li>
-                    <li><img src="./IMG/ICONOS/icons8-jquery.svg" alt="jQuery"></li>
-                </ul>
-            </div>
-            <div class="tech-block">
-                <h3>Back-End</h3>
-                <ul>
-                    <li><img src="./IMG/ICONOS/icons8-nodo-js.svg" alt="NodeJS Icon"></li>
-                    <li><img src="./IMG/ICONOS/icons8-c-sharp-logotipo.svg" alt="C# Icon"></li>
-                    <li><img src="./IMG/ICONOS/python-3d-icon-transparent-background-free-png.webp" alt="Python Icon"></li>
-                    <li><img src="./IMG/ICONOS/green-leaf-3d-green-leaf-icon-green-leaf-design-free-png.png" alt="MongoDB Icon"></li>
-                    <li><img src="./IMG/ICONOS/powered-by-mysql-125x64.png" alt="MySQL Icon"></li>
-                    <li><img src="./IMG/ICONOS/3d-file-sql-icon-illustration-png.png" alt="SQL Icon"></li>
-                    <li><img src="./IMG/ICONOS/fashionable-and-anthropomorphic-elephant-character-in-studio-setting-free-png.png" alt="Postgres Icon"></li>
-                    <li><img src="./IMG/ICONOS/vecteezy_java-programming-language-3d-icon-transparent-background_60194949.png" alt="Java Icon"></li>
-                    <li><img src="./IMG/ICONOS/vecteezy_php-programming-language-3d-icon-transparent-background_60194947.png" alt="PHP Icon"></li>
-                </ul>
-            </div>
-
-            <div class="tech-block">
-                <h3>Frameworks and Libraries</h3>
-                <ul>
-                    <li><img src="./IMG/ICONOS/icons8-oreja.svg" alt="Bootstrap Icon"></li>
-                    <li><img src="./IMG/ICONOS/icons8-hablar-con-descaro-a.svg" alt="Sass Icon"></li>
-                    <li><img src="./IMG/ICONOS/icons8-reaccionar-nativo.svg" alt="React Icon"></li>
-                </ul>
-            </div>
-            <div class="tech-block">
-                <h3>Game Engines</h3>
-                <ul>
-                    <li><img src="./IMG/ICONOS/icons8-unidad.svg" alt="Unity"></li>
-                </ul>
-            </div>
-        </section>
-
+    <main id="main-container">
+        <div id="hero"></div>
+        <div id="projects"></div>
+        <div id="about"></div>
+        <div id="tech"></div>     
     </main>
 
-    <section class="cta">
-        <h2>Let's build something meaningful</h2>
-        <a href="./pages/contact.html" class="btn btn--primary">Contact</a>
-    </section>
-
+    <div id="cta"></div>
+    <div id="footer"></div>
     <button id="backToTopBtn">Top</button>
-
-    <footer>
-
-        <div class="redes-section">
-            <h2>Connect</h2>
-
-            <a rel="noopener" id="twitter" href="https://twitter.com/daviddelapuent5" target="_blank"
-                role="button">Twitter<i class="fab fa-twitter fa-lg"></i></a>
-            <a rel="noopener" href="https://www.linkedin.com/in/daviddelapuente/" id="linkedin" target="_blank"><i
-                    class="fab fa-linkedin-in fa-2x"></i>Linkedin</a>
-        </div>
-
-        <div class="copyright-section">
-            <p>© 2024 David de la Puente | Designed with HTML, CSS and JavaScript</p>
-        </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script type="module" src="./JS/main.js"></script>
-    <script type="module" src="./JS/back_to_top.js"></script>
-    <script type="module" src="./JS/animations/repulsion.js"></script>
-    <script type="module" src="./JS/animations/physics.js"></script>
 
 </body>
 

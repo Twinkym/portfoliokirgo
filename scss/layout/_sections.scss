@@ -1,5 +1,7 @@
 /* layout/_sections.scss */
 
+
+
 section {
   padding: var(--spacing-lg);
 }
@@ -9,9 +11,4 @@ section {
   margin-bottom: var(--spacing-md);
 }
 
-#about-preview {
-    display: flex;
-    justify-content: center;
-    padding: 8rem 2rem;
-    min-height: 100dvh;
-}
+

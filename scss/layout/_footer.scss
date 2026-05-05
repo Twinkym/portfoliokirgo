@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+}
+
+.redes-section {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.copyright-section {
+  text-align: right;
+}

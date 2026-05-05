@@ -1,3 +1,3 @@
-import { initMenu} from "./ui/renderMenu.js";
+import { bootstrapApp } from "./core/bootstrap.js";
 
-initMenu();
+bootstrapApp();

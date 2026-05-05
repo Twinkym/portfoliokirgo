@@ -63,11 +63,14 @@ body {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  backdrop-filter: blur(10px);
-  padding: var(--spacing-md) var(--spacing-lg);
+  padding: 1rem 2rem; /* antes era demasiado grande */
   width: 100%;
   position: relative;
   z-index: 10;
+  /* 🌊 Efecto agua */
+  background: radial-gradient(circle at 20% 30%, var(--water-highlight-soft), transparent 40%), radial-gradient(circle at 80% 70%, var(--water-mid), transparent 50%), linear-gradient(135deg, rgba(0, 80, 200, 0.2), rgba(0, 150, 255, 0.15), rgba(0, 0, 0, 0.6));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 /* zona izquierda */
@@ -79,6 +82,7 @@ body {
 /* logo */
 .logo {
   width: clamp(4rem, 6vw, 6rem);
+  transform: translateY(-20px);
   height: auto;
   border-radius: var(--radius-round);
   object-fit: cover;
@@ -94,6 +98,7 @@ body {
   font-size: clamp(1.2rem, 2vw, 1.6rem);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.05em;
+  transform: translateY(-10px);
 }
 
 /* menú */
@@ -110,13 +115,6 @@ section {
 .section-title {
   font-size: 2rem;
   margin-bottom: var(--spacing-md);
-}
-
-#about-preview {
-  display: flex;
-  justify-content: center;
-  padding: 8rem 2rem;
-  min-height: 100dvh;
 }
 
 /* components/_buttons.scss */
@@ -272,6 +270,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: var(--spacing-lg);
   margin-top: 2rem;
 }
@@ -294,6 +294,10 @@ section {
   gap: var(--spacing-md);
 }
 
+.hero__content {
+  text-align: center;
+}
+
 .projects {
   padding: var(--spacing-lg);
 }
@@ -301,6 +305,29 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--spacing-lg);
+}
+
+.about-preview {
+  display: flex;
+  flex-direction: column; /* 🔥 clave */
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  gap: var(--spacing-md);
+  scroll-margin-top: 100px;
+}
+
+.tech-block ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.tech-block img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=main.css.map */
