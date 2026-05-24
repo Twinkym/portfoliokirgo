@@ -7,9 +7,13 @@
 @use 'layout/header';
 @use 'layout/sections';
 @use 'layout/grid';
+@use 'layout/footer';
 
 @use 'components/buttons';
 @use 'components/cards';
 @use 'components/menu';
+@use 'components/back-to-top';
+
+@use 'modules/tech';
 
 @use 'pages/home';

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- DEFINICIÓN GRADIENTE -->
+  <defs>
+    <linearGradient id="kd-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4da3ff"></stop>
+      <stop offset="100%" stop-color="#0a58ca"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- K ESTILO PINCEL -->
+  <path d="M80 20 L80 120 M80 80 L135 20 M80 80 L135 120" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+
+  <!-- D MODERNA -->
+  <path d="M140 30 Q200 30 200 80 Q200 110 150 120" stroke="url(#kd-gradient)" stroke-width="6" fill="none" stroke-linecap="round"></path>
+
+  <!-- TEXTO KDTECH -->
+  <text x="80" y="150" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="2" fill="white">
+    KDTECH
+  </text>
+
+  <!-- ENGINEERING -->
+  <text x="80" y="165" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="4" fill="#4da3ff">
+    ENGINEERING
+  </text>
+
+  <!-- TAGLINE -->
+  <text x="80" y="205" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="3" fill="#999">
+    BE A BIRD
+  </text>
+
+</svg>
