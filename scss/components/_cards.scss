@@ -5,8 +5,8 @@
   flex-direction: column;
   justify-content: space-between;
 
-  padding: var(--spacing-md);
-  border-radius: var(--radius);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
 
   background: linear-gradient(
     145deg,
@@ -27,7 +27,7 @@
   }
 
   h3 {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--space-sm);
     font-size: 1.2rem;
   }
 
@@ -42,7 +42,7 @@
     flex-wrap: wrap;
     gap: 0.5rem;
 
-    margin-top: var(--spacing-md);
+    margin-top: var(--space-md);
 
     li {
       font-size: 0.75rem;
@@ -57,7 +57,7 @@
   }
 
   a {
-    margin-top: var(--spacing-md);
+    margin-top: var(--space-md);
     font-size: 0.85rem;
     text-decoration: none;
     color: var(--color-accent);

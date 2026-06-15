@@ -11,8 +11,8 @@
   align-items: center;
   text-align: center;
 
-  padding: var(--spacing-lg);
-  margin-top: 2rem;
+  padding: var(--space-lg);
+  margin-top: var(--space-md);
 
   &__content {
     max-width: 800px;
@@ -24,16 +24,16 @@
   }
 
   &__subtitle {
-    margin-top: var(--spacing-md);
-    font-size: 1.25rem;
+    margin-top: var(--space-md);
+    font-size: var(--font-size-xl);
     opacity: 0.8;
     max-width: 600px;
   }
 
   &__actions {
-    margin-top: var(--spacing-lg);
+    margin-top: var(--space-lg);
     display: flex;
-    gap: var(--spacing-md);
+    gap: var(--space-md);
   }
 }
 
@@ -42,12 +42,12 @@
 }
 
 .projects {
-  padding: var(--spacing-lg);
+  padding: var(--space-lg);
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-lg);
+    gap: var(--space-lg);
   }
 }
 
@@ -59,14 +59,14 @@
 
   max-width: 700px;
   margin: 0 auto;
-  gap: var(--spacing-md);
+  gap: var(--space-md);
   scroll-margin-top: 100px;
 }
 
 .tech-block ul {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-md);
+  gap: var(--space-md);
 }
 
 .tech-block img {

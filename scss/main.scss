@@ -12,8 +12,13 @@
 @use 'components/buttons';
 @use 'components/cards';
 @use 'components/menu';
+@use 'components/preview-card';
 @use 'components/back-to-top';
 
 @use 'modules/tech';
+@use 'modules/certifications';
+@use 'modules/cybersecurity';
+@use 'modules/games';
 
 @use 'pages/home';
+@use 'pages/certifications-page';

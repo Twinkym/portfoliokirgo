@@ -1,0 +1,16 @@
+.cybersecurity {
+    padding: var(--space-lg) var(--space-md);
+
+    &__title {
+        text-align: center;
+        margin-bottom: var(--space-md);
+    }
+
+    &__grid {
+        display: grid;
+        gap: var(--space-md);
+
+        grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    }
+}
+

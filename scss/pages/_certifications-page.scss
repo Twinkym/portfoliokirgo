@@ -1,0 +1,42 @@
+.certifications-page {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 2rem;
+}
+
+.certifications-hero {
+    text-align: center;
+
+    margin: 10rem 0 4rem;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        max-width: 70ch;
+
+        margin-inline: auto;
+    }
+}
+
+.certification-category {
+
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3rem;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+.status {
+    font-weight: 600;
+
+    &--pending {
+        color: #d97706;
+    }
+}

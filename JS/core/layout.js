@@ -4,6 +4,9 @@ import { initHero } from "../modules/hero.js";
 import { initProjects } from "../modules/projects.js";
 import { initAbout } from "../modules/about.js";
 import { initTech } from "../modules/tech.js";
+import { initCertifications } from "../modules/certifications.js";
+import { initCybersecurity } from "../modules/cybersecurity.js";
+import { initGames } from "../modules/games.js";
 import { initFooter } from "../modules/footer.js";
 
 export async function initLayout() {
@@ -23,6 +26,9 @@ export async function initLayout() {
         initProjects(),
         initAbout(),
         initTech(),
+        initCertifications(),
+        initCybersecurity(),
+        initGames(),
         initFooter()
     ]);
 }
