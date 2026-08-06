@@ -1,0 +1,62 @@
+# ==================================================
+# KDTech Engineering - Portfolio
+# GIT Ignore File
+#
+# This file defines the default ignored resources
+# for all KDTech Engineering projects. It is 
+# recommended to include this file in the root of your
+# project directory to ensure that unnecessary files
+# are not committed to the repository.
+# ==================================================
+
+# Dependencies
+/node_modules
+
+# Environment 
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# OS generated files
+Desktop.ini
+
+# Runtime files
+*.pid
+
+# Temporary backup files
+*.bak
+*.orig
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+.vs/
+
+# Package managers
+.pnpm-store/
+
+# Build cache
+.parcel-cache/
+
+# Sass cache
+.sass-cache/
+
+# Temp files
+*.tmp
+*.temp
+
+# Coverage
+coverage/
+
+# Optional
+.idea/
