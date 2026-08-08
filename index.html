@@ -22,12 +22,13 @@
         <div class="pill-container">
             <p class="message pill green">
                 Choose your path: <br>
-                Blue pill ->  Enter to the real world and explore my portfolio.<br>
-                Red pill -> Stay in the simulation
             </p>
             <button class="pill-blue" onclick="elegirPastilla('azul')">Blue pill</button>
+            <p class="pill-message-blue" id="pill-message-blue">Enter to the real world and explore my portfolio.</p>
             <button class="pill-red" onclick="elegirPastilla('roja')">Red pill</button>
-            <p>Click a pill to continue</p>
+            <p class="pill-message-red" id="pill-message-red">Stay in the simulation and experience the illusion.</p>
+            <br>
+            <p class="decision-message">Click a pill to continue</p>
         </div>
     </div>
     <canvas id="matrix-canvas"></canvas>
