@@ -11,14 +11,10 @@
             "id": "11c91003fadc18a6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "KDUI/Patterns.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Patterns"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "KDUI/Patterns.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Patterns"
+              "title": "Enlaces entrantes"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "KDUI/Patterns.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Patterns"
+              "title": "Enlaces salientes"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "KDUI/Patterns.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Patterns"
+              "title": "Esquema"
             }
           }
         ]
@@ -185,41 +178,41 @@
   },
   "active": "11c91003fadc18a6",
   "lastOpenFiles": [
-    "KDUI/PATTERNS/Page-Grid.md",
-    "KDUI/Patterns/Stack.md",
-    "KDUI/Patterns/README.md",
-    "KDUI/Patterns/Page-Section.md",
-    "KDUI/Patterns/Page-Layout.md",
-    "KDUI/Patterns/Page-Hero.md",
-    "KDUI/Patterns/Page-Grid.md",
-    "KDUI/Patterns/Page-Flow.md",
-    "KDUI/Patterns/Page-Container.md",
-    "KDUI/Patterns/Cluster.md",
-    "KDUI/Patterns",
-    "KDDocs/Documentation-Principle.md",
-    "KDDocs/Document-LifeCycle.md",
-    "KDDocs/Naming-Convention.md",
-    "KDDocs/Markdown Structure.md",
-    "KDDocs",
-    "KDDocs-001/Markdown Structure.md",
-    "KDDocs-001/Markdown Structure",
-    "KDDocs-001",
-    "KDUI/Patterns.md",
-    "KDUI/PATTERNS/Page-Layout.md",
-    "KDUI/Design Principles.md",
-    "KDUI/Changelog.md",
-    "KDUI/Components.md",
-    "KDUI/Architecture.md",
-    "KDUI/Tokens/Spacing.md",
-    "KDUI/Tokens.md",
-    "KDUI/Typography.md",
-    "KDUI/Colors.md",
-    "KDUI/Spacing.md",
-    "KDUI/Foundations",
-    "KDUI.zip",
-    "KDUI/Architecture",
-    "KDUI/Tokens",
-    "KDUI/Components",
-    "KDUI/PATTERNS"
+    "KDTech-Universe/KDUI/Design-Principles.md",
+    "KDTech-Universe/KDUI/Foundations/Accessibility.md",
+    "KDTech-Universe/KDDocs/Naming-Convention.md",
+    "KDTech-Universe/KDDocs/Markdown-Structure.md",
+    "KDTech-Universe/KDDocs/Documentation-Principle.md",
+    "KDTech-Universe/KDDocs/Document-LifeCycle.md",
+    "KDTech-Universe/KDDocs",
+    "KDTech-Universe/Roadmap.md",
+    "KDTech-Universe/Lessons-Learned.md",
+    "KDTech-Universe/Git-Audit.md",
+    "KDTech-Universe/ADR/ADR-006.md",
+    "KDTech-Universe/ADR/ADR-005.md",
+    "KDTech-Universe/ADR/ADR-004.md",
+    "KDTech-Universe/ADR/ADR-002.md",
+    "KDTech-Universe/ADR/ADR-003.md",
+    "KDTech-Universe/ADR/ADR-001.md",
+    "KDTech-Universe/ADR",
+    "KDTech-Universe/Architecture/Architecture.md",
+    "KDTech-Universe/Architecture",
+    "KDTech-Universe/Company-History",
+    "KDTech-Universe/Development-History/Twinkym-patch-2.md",
+    "KDTech-Universe/Development-History/Pruebas-css.md",
+    "KDTech-Universe/Development-History/Twinkym-patch-1.md",
+    "KDTech-Universe/Development-History",
+    "KDTech-Universe/Initiatives/PWA.md",
+    "KDTech-Universe/Initiatives/TypeScript-Migration.md",
+    "KDTech-Universe/Initiatives/KDMeta-Engine.md",
+    "KDTech-Universe/Initiatives/Performance-Engine.md",
+    "KDTech-Universe/Initiatives/Future-Ideas.md",
+    "KDTech-Universe/Initiatives/KDGuardian.md",
+    "KDTech-Universe/Initiatives/Design-System.md",
+    "KDTech-Universe/Initiatives",
+    "KDTech-Universe/Version-History",
+    "KDTech-Universe/Release-History",
+    "KDTech-Universe/KDUI/Tokens",
+    "KDTech-Universe/KDUI/Patterns"
   ]
 }
