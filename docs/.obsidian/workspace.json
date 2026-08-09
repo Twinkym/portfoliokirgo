@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "7f70e1941b76cb24",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f93eb52400f7372",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11c91003fadc18a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KDUI/Patterns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Patterns"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5e2ee829deacfaee",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa29ec7fdc6a328e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af929feea0002e92",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "a80547e69d5fe058",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "1da95bfeb2f8c840",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5aff9111365a1c2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "382e66b91ce13d92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "831e6b0e2ebea413",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "KDUI/Patterns.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Patterns"
+            }
+          },
+          {
+            "id": "4cbe435f6ed07fa6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "KDUI/Patterns.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Patterns"
+            }
+          },
+          {
+            "id": "7e5c50ac8beebe07",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "3bdd7afd6e05afba",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "14d7b2b5755e17ae",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "KDUI/Patterns.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Patterns"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "11c91003fadc18a6",
+  "lastOpenFiles": [
+    "KDUI/PATTERNS/Page-Grid.md",
+    "KDUI/Patterns/Stack.md",
+    "KDUI/Patterns/README.md",
+    "KDUI/Patterns/Page-Section.md",
+    "KDUI/Patterns/Page-Layout.md",
+    "KDUI/Patterns/Page-Hero.md",
+    "KDUI/Patterns/Page-Grid.md",
+    "KDUI/Patterns/Page-Flow.md",
+    "KDUI/Patterns/Page-Container.md",
+    "KDUI/Patterns/Cluster.md",
+    "KDUI/Patterns",
+    "KDDocs/Documentation-Principle.md",
+    "KDDocs/Document-LifeCycle.md",
+    "KDDocs/Naming-Convention.md",
+    "KDDocs/Markdown Structure.md",
+    "KDDocs",
+    "KDDocs-001/Markdown Structure.md",
+    "KDDocs-001/Markdown Structure",
+    "KDDocs-001",
+    "KDUI/Patterns.md",
+    "KDUI/PATTERNS/Page-Layout.md",
+    "KDUI/Design Principles.md",
+    "KDUI/Changelog.md",
+    "KDUI/Components.md",
+    "KDUI/Architecture.md",
+    "KDUI/Tokens/Spacing.md",
+    "KDUI/Tokens.md",
+    "KDUI/Typography.md",
+    "KDUI/Colors.md",
+    "KDUI/Spacing.md",
+    "KDUI/Foundations",
+    "KDUI.zip",
+    "KDUI/Architecture",
+    "KDUI/Tokens",
+    "KDUI/Components",
+    "KDUI/PATTERNS"
+  ]
+}
