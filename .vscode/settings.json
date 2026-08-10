@@ -1,5 +1,5 @@
 {
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "afterDelay",
     "liveshare.accessibility.accessibilityFeaturesEnabled": "off",
     "liveshare.accessibility.soundVolume": 0,
     "liveshare.accessibility.voiceVolume": 0

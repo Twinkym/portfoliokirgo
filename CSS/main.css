@@ -1,5 +1,88 @@
 @charset "UTF-8";
 /* main.scss */
+/* base/_variables.scss */
+:root {
+  /* =======================================================
+      COLORS 
+     =======================================================*/
+  --color-primary: #00aaff;
+  --color-secondary: #ffffffaa;
+  --color-accent: #3b82f6;
+  --color-text: #e5e7eb;
+  --color-light: #ffffff;
+  --color-bg: #000;
+  /* ======================================================
+      WATER SYSTEM  
+     ======================================================*/
+  --water-highlight: rgba(255, 255, 255, 0.95);
+  --water-highlight-soft: rgba(255, 255, 255, 0.4);
+  --water-mid: rgba(0, 120, 255, 0.15);
+  --water-deep: rgba(0, 80, 200, 0.2);
+  --water-deep-mid: rgba(0, 150, 255, 0.1);
+  --water-deep-soft: rgba(0, 0, 0, 0.15);
+  --water-shadow: rgba(0, 0, 0, 0.2);
+  /* ======================================================
+      SHADOWS 
+     ======================================================*/
+  --shadow-highlight: rgba(255, 255, 255, 0.8);
+  --shadow-mid: rgba(0, 0, 0, 0.25);
+  --shadow-soft: rgba(0, 0, 0, 0.3);
+  --shadow-light: rgba(100, 20, 0, 0.6);
+  --shadow-blue: rgba(50, 70, 150, 0.7);
+  --shadow-card: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 0.6rem 1.56rem rgba(0, 0, 0, 0.15);
+  /* ======================================================
+      SHAPE 
+     ======================================================*/
+  --radius-round: 50%;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  /* =====================================================
+      FONT DIMENSIONS 
+     ======================================================*/
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.375rem;
+  /* =====================================================
+      FONT FAMILIES 
+     ======================================================*/
+  --font-family-primary: 'Poppins', sans-serif;
+  /* =====================================================
+      FONT WEIGHTS 
+     ======================================================*/
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  /* =====================================================
+      FILTERS 
+     ======================================================*/
+  --filter-soft-blur: blur(0.25rem);
+  --filter-blur: blur(0.75rem);
+  /* ====================================================
+      SPACES & MARGINS 
+     ======================================================*/
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+  /* ====================================================
+      WIDTH SYSTEM 
+     ======================================================*/
+  --container-sm: 48rem;
+  --container-md: 64rem;
+  --container-lg: 75rem;
+  --container-xl: 90rem;
+  /* ====================================================
+      HEIGHT 
+     ======================================================*/
+  --header-height: 5rem;
+}
+
 /* base/_reset.scss */
 *,
 *::before,
@@ -12,50 +95,6 @@
 body {
   font-family: system-ui, sans-serif;
   line-height: 1.5;
-}
-
-/* base/_variables.scss */
-:root {
-  /* COLORS */
-  --color-primary: #00aaff;
-  --color-secondary: #ffffffaa;
-  --color-accent: #3b82f6;
-  --color-text: #e5e7eb;
-  --color-light: #ffffff;
-  --color-bg: #000;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 2rem;
-  --radius: 0.75rem;
-  /* WATER SYSTEN  */
-  --water-highlight: rgba(255, 255, 255, 0.95);
-  --water-highlight-soft: rgba(255, 255, 255, 0.4);
-  --water-mid: rgba(0, 120, 255, 0.15);
-  --water-deep: rgba(0, 80, 200, 0.2);
-  --water-deep-mid: rgba(0, 150, 255, 0.1);
-  --water-deep-soft: rgba(0, 0, 0, 0.15);
-  --water-shadow: rgba(0, 0, 0, 0.2);
-  /* SHADOWS */
-  --shadow-highlight: rgba(255, 255, 255, 0.8);
-  --shadow-mid: rgba(0, 0, 0, 0.25);
-  --shadow-soft: rgba(0, 0, 0, 0.3);
-  --shadow-light: rgba(100, 20, 0, 0.6);
-  --shadow-blue: rgba(50, 70, 150, 0.7);
-  /* SHAPE */
-  --radius-round: 50%;
-  /* FONT DIMENSIONS */
-  --font-size-small: 14px;
-  --font-size-medium: 16px;
-  --font-size-large: 18px;
-  /* FONT FAMILIES */
-  --font-family-primary: 'Poppins', sans-serif;
-  /* FONT WEIGHTS */
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
-  --font-weight-bold: 600;
-  /* FILTERS */
-  --filter-soft-blur: blur(4px);
-  --filter-blur: blur(12px);
 }
 
 /* layout/_header.scss */
@@ -112,16 +151,6 @@ body {
 #liquid-menu {
   display: flex;
   justify-content: flex-end;
-}
-
-/* layout/_sections.scss */
-section {
-  padding: var(--spacing-lg);
-}
-
-.section-title {
-  font-size: 2rem;
-  margin-bottom: var(--spacing-md);
 }
 
 .footer {
@@ -273,7 +302,7 @@ section {
   padding: 0.75rem 1.5rem;
   font-size: 0.95rem;
   font-weight: var(--font-weight-bold);
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -310,8 +339,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: var(--spacing-md);
-  border-radius: var(--radius);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.4));
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
@@ -323,7 +352,7 @@ section {
   border-color: var(--color-accent);
 }
 .project-card h3 {
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--space-sm);
   font-size: 1.2rem;
 }
 .project-card p {
@@ -335,7 +364,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: var(--spacing-md);
+  margin-top: var(--space-md);
 }
 .project-card__meta li {
   font-size: 0.75rem;
@@ -346,7 +375,7 @@ section {
   list-style: none;
 }
 .project-card a {
-  margin-top: var(--spacing-md);
+  margin-top: var(--space-md);
   font-size: 0.85rem;
   text-decoration: none;
   color: var(--color-accent);
@@ -408,8 +437,23 @@ section {
 
 .back-drop {
   background: radial-gradient(circle at 30% 30%, var(--water-highlight), var(--water-mid) 50%, var(--water-deep), var(--water-shadow) 80%);
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   opacity: 0.9;
+}
+
+.preview-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: white;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.preview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .back-to-top {
@@ -431,66 +475,98 @@ section {
 }
 
 .tech-section {
-  padding: 4rem 2rem;
+  padding: var(--space-lg) var(--space-md);
   text-align: center;
   cursor: pointer;
 }
 .tech-section__title h2 {
   background: var(--primary);
-  border-radius: 0.75rem;
-  padding: 1rem;
-  box-shadow: inset -10px -10px 10px rgba(0, 0, 0, 0), inset 10px 10px 10px rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  box-shadow: inset -10px -10px 10px rgba(0, 0, 0, 0.7), inset 10px 10px 10px rgba(255, 255, 255, 0.7);
 }
-.tech-section__grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.tech-section__group {
-  flex: 1 1 300px;
-  padding: 1.5rem;
+
+.tech-group {
+  padding: var(--space-md);
   background: var(--primary);
-  border-radius: 0.75rem;
+  border-radius: var(--radius-md);
   box-shadow: inset -10px -10px 10px rgba(0, 0, 0, 0.7), inset 10px 10px 10px rgba(255, 255, 255, 0.7);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.tech-section__group:hover {
+.tech-group:hover {
   transform: translateY(-6px);
   box-shadow: inset -6px -6px 8px rgba(0, 0, 0, 0.6), inset 6px 6px 8px rgba(255, 255, 255, 0.6), 0 10px 20px rgba(0, 0, 0, 0.4);
 }
-.tech-section__group h4 {
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+.tech-group h3 {
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-xxl);
   letter-spacing: 1px;
 }
-.tech-section__group ul {
+.tech-group ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--space-sm);
   justify-content: center;
 }
-.tech-section__group li {
+.tech-group li {
   width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.tech-section__group li img {
+.tech-group li img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
-.tech-section__group li img {
+.tech-group li img {
   transition: transform 0.2s ease;
 }
 
-.tech-section__group li:hover img {
+.tech-group li:hover img {
   transform: scale(1.15);
+}
+
+.games {
+  padding: 4rem 2rem;
+}
+.games__title {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+.games__grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.certifications {
+  padding: var(--space-lg) var(--space-md);
+}
+.certifications__title {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+.certifications__grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+}
+
+.cybersecurity {
+  padding: var(--space-lg) var(--space-md);
+}
+.cybersecurity__title {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+.cybersecurity__grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
 }
 
 /* pages/_home.scss */
@@ -505,8 +581,8 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: var(--spacing-lg);
-  margin-top: 2rem;
+  padding: var(--space-lg);
+  margin-top: var(--space-md);
 }
 .hero__content {
   max-width: 800px;
@@ -516,15 +592,15 @@ section {
   font-weight: 700;
 }
 .hero__subtitle {
-  margin-top: var(--spacing-md);
-  font-size: 1.25rem;
+  margin-top: var(--space-md);
+  font-size: var(--font-size-xl);
   opacity: 0.8;
   max-width: 600px;
 }
 .hero__actions {
-  margin-top: var(--spacing-lg);
+  margin-top: var(--space-lg);
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--space-md);
 }
 
 .hero__content {
@@ -532,12 +608,12 @@ section {
 }
 
 .projects {
-  padding: var(--spacing-lg);
+  padding: var(--space-lg);
 }
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--spacing-lg);
+  gap: var(--space-lg);
 }
 
 .about-preview {
@@ -547,20 +623,128 @@ section {
   text-align: center;
   max-width: 700px;
   margin: 0 auto;
-  gap: var(--spacing-md);
+  gap: var(--space-md);
   scroll-margin-top: 100px;
 }
 
-.tech-block ul {
+.tech-group ul {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-md);
+  gap: var(--space-md);
 }
 
-.tech-block img {
+.tech-group img {
   width: 48px;
   height: 48px;
   object-fit: contain;
+}
+
+.certifications-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.certifications-hero {
+  text-align: center;
+  margin: 10rem 0 4rem;
+}
+.certifications-hero h1 {
+  margin-bottom: 1rem;
+}
+.certifications-hero p {
+  max-width: 70ch;
+  margin-inline: auto;
+}
+
+.certification-category {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+.certification-category h2 {
+  margin-bottom: 1rem;
+}
+
+.status {
+  font-weight: 600;
+}
+.status--pending {
+  color: #d97706;
+}
+
+/* ============================================
+    CYBERSECURITY PAGE
+    ============================================ */
+.cybersecurity-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4xl);
+  width: min(100%, var(--content-max-wodth));
+  margin-inline: auto;
+  padding: var(--space-5xl) var(--space-xl) var(--space-6xl);
+  /* ============================================
+  HERO
+  ============================================ */
+}
+.cybersecurity-page .page-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  text-align: center;
+  padding-block: var(--space-4xl);
+}
+.cybersecurity-page {
+  /* ============================================
+      COMMON ELEMENTS
+  ============================================ */
+}
+
+/**
+* --------------------------------------------------------------
+* KDUI Pattern: Page Grid
+* --------------------------------------------------------------
+* Purpose: 
+* Provides a responsive and reusable grid layout for 
+* repeated UI elements such as cards, projects and collections.
+*
+* Responsibilities:
+* - Layout
+* - Grid distribution
+* - Spacing
+* - Responsive behavior
+* 
+* Out of Scope:
+* - Component styling
+* - Typography
+* - Colors
+* - Business logic
+*
+* Documentation:
+* docs/KDUI/patterns/Page-Grid.md
+*
+* Created: 2026-08-09
+* Last Updated: 2026-08-09
+*
+* @author KDTech Engineering
+* @version 0.1.0
+* --------------------------------------------------------------
+*/
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  gap: var(--space-md);
+}
+
+/* patterns/_page-section.scss */
+section {
+  padding: var(--spacing-lg);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
 }
 
 /*# sourceMappingURL=main.css.map */

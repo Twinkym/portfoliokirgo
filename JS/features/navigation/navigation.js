@@ -37,6 +37,7 @@ export const NAV_TREE = {
         }
       ]
     },
+    { name: "cybersecurity", type: "leaf", url: "/partials/cybersecurity.html" },
     {
       name: "Juegos",
       type: "branch",

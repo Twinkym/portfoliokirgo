@@ -1,0 +1,16 @@
+.games {
+    padding: 4rem 2rem;
+
+    &__title {
+        text-align: center;
+        margin-bottom: var(--space-md);
+    }
+
+    &__grid {
+        display: grid;
+        gap: var(--space-md);
+
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+

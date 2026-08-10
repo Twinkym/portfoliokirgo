@@ -1,0 +1,14 @@
+name: Code Quality
+
+on:
+  workflow_dispatch:
+  
+
+jobs:
+  pending:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Project roadmap
+        
+        run: echo "ESLint and formatting checks will be added in a future phase."

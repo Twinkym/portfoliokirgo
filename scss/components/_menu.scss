@@ -80,6 +80,6 @@
         var(--water-shadow) 80%
     );
 
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     opacity: 0.9;
 }
