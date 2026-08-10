@@ -1,5 +1,5 @@
 .tech-section {
-    padding: var(space-lg) var(space-md);
+    padding: var(--space-lg) var(--space-md);
     text-align: center;
     cursor: pointer;
 
@@ -15,17 +15,9 @@
         }
     }
 
-    &__grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: var(--space-md);
+}
 
-        margin-top: var(--space-md);
-    }
-
-    &__group {
-        flex: 1 1 300px;
+.tech-group {
         padding: var(--space-md);
 
         background: var(--primary);
@@ -46,7 +38,7 @@
                 0 10px 20px rgba(0, 0, 0, 0.4);
         }
 
-        h4 {
+        h3 {
             margin-bottom: var(--space-sm);
             font-size: var(--font-size-xxl);
             letter-spacing: 1px;
@@ -77,12 +69,10 @@
         }
     }
 
-}
-
-.tech-section__group li img {
+.tech-group li img {
     transition: transform 0.2s ease;
 }
 
-.tech-section__group li:hover img {
+.tech-group li:hover img {
     transform: scale(1.15);
 }

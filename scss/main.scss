@@ -25,6 +25,11 @@
 @use 'components/back-to-top';
 @use 'components/tooltip';
 
+@use 'sections/tech';
+@use 'sections/games';
+@use 'sections/certifications';
+@use 'sections/cybersecurity';
+
 @use 'pages/home-page';
 @use 'pages/certifications-page';
 @use 'pages/cybersecurity-page';

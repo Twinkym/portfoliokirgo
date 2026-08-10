@@ -63,13 +63,13 @@
   scroll-margin-top: 100px;
 }
 
-.tech-block ul {
+.tech-group ul {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md);
 }
 
-.tech-block img {
+.tech-group img {
   width: 48px;
   height: 48px;
   object-fit: contain;
