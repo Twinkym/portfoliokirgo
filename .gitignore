@@ -60,3 +60,6 @@ coverage/
 
 # Optional
 .idea/
+
+# Obsidian workspace state
+docs/.obsidian/workspace.json

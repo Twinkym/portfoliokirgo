@@ -26,7 +26,7 @@ canvas {
 }
 
 /* Welcome message Style */
-.message {
+#message {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -36,80 +36,90 @@ canvas {
     line-height: 1.5em;
     color: #fff;
     font-size: 24px;
-    top: 150px;
+    top: 100px;
     z-index: 2;
 }
 
-/* Container for the buttons Style*/
-.pill-container {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 20%;
-    bottom: 10px;
-    left: 50%;
-    padding: 50px;
-    transform: translateX(-50%);
-    z-index: 2;
-}
+#choice-message {
+    grid-column: 1 / -1;
 
-/*  Button Styles */
-.pill-blue, .pill-red {
-    background-color: #007bff;
     color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+/* Container for the buttons Style*/
+#pill-container {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 2rem 5rem;
+
+    width: min(80vw, 700px);
+    padding: 2rem;
+
+    z-index: 2;
+}
+
+#pill-blue-group,
+#pill-red-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+    margin: 0;
+
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#blue-message, 
+#red-message {
+    margin: 0;
+    
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+/*  Button Styles */
+#blue-pill, 
+#red-pill {
+    margin: 0;
     padding: 10px 30px;
+
+    color: #fff;
     border: none;
     border-radius: 20px;
-    margin: 0 50px;
+
     cursor: pointer;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
-.pill-red{
-    background-color: #dc3545;
+#red-pill{
+    background-color: rgba(222, 53, 69, 0.9);
 }
 
-.pill-message-blue, .pill-message-red {
-    position: absolute;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    top: 300px;
-    margin-top: 40px;
-    margin-left: 20px;
-    z-index: 2;
-}
-
-#pill-message-blue {
-    position: absolute;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    align-items: space-between;
-    color: #fff;
-    font-size: 18px;
-    top: 300px;
-    margin-top: 40px;
-    margin-left: 20px;
-    z-index: 2;
-}
-
-#pill-message-red {
-    position: absolute;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    align-items: space-between;
-    color: #fff;
-    font-size: 18px;
-    top: 300px;
-    margin-top: 40px;
-    margin-right: 20px;
-    z-index: 2;
+#blue-pill{
+    background-color: rgba(0, 102, 255, 0.9);
 }
 
 .decision-message {
-    top: 400px;
+    grid-column: 1 / -1;
+
+    color: #fff;
+    font-family: Arial, sans-serif;
+    
     font-size: 20px;
     margin-top: 40px;
+    text-align: center;
 }
