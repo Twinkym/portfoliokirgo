@@ -11,6 +11,9 @@ importers:
       sass:
         specifier: ^1.99.0
         version: 1.102.0
+      three:
+        specifier: ^0.185.1
+        version: 0.185.1
 
 packages:
 
@@ -135,6 +138,9 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
+  three@0.185.1:
+    resolution: {integrity: sha512-5aojFCXKwnjBRZvUnt3WFfEcvUJgkN5LlijRFN95hMy8WVkG4I0QNcJE+OuWvuJ0bOdStrbfXn0pkd6/QyiAlg==}
+
 snapshots:
 
   '@parcel/watcher-android-arm64@2.6.0':
@@ -228,3 +234,5 @@ snapshots:
       '@parcel/watcher': 2.6.0
 
   source-map-js@1.2.1: {}
+
+  three@0.185.1: {}
