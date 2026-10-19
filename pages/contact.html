@@ -6,17 +6,17 @@
     <title>Contact | KDTech</title>
     <link rel="shortcut icon" href="../IMG/Logo_KirgoDev_320.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="./CSS/base.css">
-    <link rel="stylesheet" href="./CSS/layout.css">
-    <link rel="stylesheet" href="./CSS/components/liquid-menu.css">
-    <link rel="stylesheet" href="./CSS/components/forms.css">
-    <link rel="stylesheet" href="./CSS/components/buttons.css">
-    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/layout.css">
+    <link rel="stylesheet" href="../CSS/components/liquid-menu.css">
+    <link rel="stylesheet" href="../CSS/components/forms.css">
+    <link rel="stylesheet" href="../CSS/components/buttons.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
 </head>
 <body>
 
-    <button id="back-btn" class="back-btn">
-        <span class="arrow">←</span>
+    <button id="back-btn" class="back-btn" type="button">
+        <span class="arrow" aria-hidden="true">←</span>
     </button>
 
     <section class="contact" >
@@ -33,7 +33,7 @@
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required autocomplete="email">
                     <span class="error" data-error="email"></span>
                 </div>
 
@@ -49,7 +49,7 @@
         </div>
     </section>
     
-    <script type="module" src="/JS/core/validation.js"></script>
-    <script type="module" src="/JS/core/contact.js"></script>
+    <script type="module" src="../JS/core/validation.js"></script>
+    <script type="module" src="../JS/core/contact.js"></script>
 </body>
 </html>
